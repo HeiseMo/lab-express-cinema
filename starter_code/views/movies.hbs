@@ -1,4 +1,15 @@
-<h1>Movies</h1>
-{{#each movieList}}
-<p><a href="/movies/{{_id}}">{{title}}</a></p>
-{{/each}}
+<div class="moviesMainBox">
+    <div class="mainBoxHeader">
+        <p class="title">Ironhack Cinema</p>
+        <p class="subtitle">Click on the movie to check the showtimes!</p>
+    </div>
+    <div class="moviesBox">
+        {{#each movieList}}
+            <div class="movie">
+                <img src="{{image}}" alt="{{title}}">
+                <h2>{{title}}</h2>
+                <a href="/movie/{{_id}}">See more</a>
+            </div>
+        {{/each}}
+    </div>
+</div>

@@ -6,3 +6,31 @@ a {
   color: #00B7FF; }
 
 /*# sourceMappingURL=style.css.map */
+
+.moviesMainBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.title {
+  font-size: 46px;
+}
+
+.subtitle {
+  font-size: 24px;
+}
+.moviesBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: 90vw;
+  flex-wrap: wrap;
+  padding: 10vh 0 0 5vw;
+}
+
+.movie {
+  width: 30vw;
+  height: 40vh
+}
