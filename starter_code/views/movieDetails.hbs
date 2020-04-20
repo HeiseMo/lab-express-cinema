@@ -1,3 +1,27 @@
 {{#with singleMovie}}
+    <div class="movieDetailsMainBox">
+        <div class="movieDetails">
+            <div class="img">
+                <img src="{{image}}" alt="{{title}}">
+            </div>
+
+            <div class="movieDetailsText">
+                <a href="/movies" class="">Go back</a>
                 <h1>{{title}}</h1>
+                <h2>Director: {{director}}</h2>
+                <h3>Stars</h3>
+                <ul class="stars"> 
+                    {{#stars}}
+                    <li>{{this}}</li>
+                    {{/stars}}
+                </ul>
+                <p class="description">{{description}}</p>
+                <div class="showtimes">
+                    {{#showtimes}}
+                    <p class="showtime">{{this}} |</p>
+                    {{/showtimes}}
+                </div>
+            </div>
+        </div>
+    </div>
 {{/with}} 
