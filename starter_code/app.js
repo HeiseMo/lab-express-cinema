@@ -10,6 +10,7 @@ const logger       = require('morgan');
 const path         = require('path');
 
 
+
 mongoose
   .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
   .then(x => {
@@ -54,5 +55,10 @@ app.locals.title = 'Express - Generated with IronGenerator';
 const index = require('./routes/index');
 app.use('/', index);
 
+const movies = require('./routes/movies');
+app.use('/', movies);
+
 
 module.exports = app;
+
+app.listen(3000, () => console.log('This project is running on port 3000 '));
